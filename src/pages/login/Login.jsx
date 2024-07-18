@@ -7,8 +7,8 @@ import "./login.scss";
 
 const Login = () => {
     const navigate = useNavigate();
-    const [username, setUsername] = useState("john32");
-    const [password, setPassword] = useState("12345677");
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
     const [signIn, { data, isError, isSuccess }] = useSignInAdminMutation();
     const dispatch = useDispatch();
